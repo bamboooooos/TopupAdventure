@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_whatday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第7000天"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="83%"
+            android:layout_centerVertical="true"
+            />
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/pb_day"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_height="4dp"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/tv_whatday"
+            android:layout_toLeftOf="@id/tv_day"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:progressBackgroundTint="#C4C4B8"
+            android:layout_centerVertical="true"
+            android:max="100"
+            android:progress="60"
+            android:progressTint="#48D1CC"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/change"
+        android:layout_width="58dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head"
+        >
+        <ImageView
+            android:id="@+id/iv_first"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/personal"
+            android:layout_marginTop="6dp"
+            />
+        <ImageView
+            android:id="@+id/iv_second"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/diamond"
+            android:layout_below="@id/iv_first"
+            android:layout_marginTop="6dp"
+            />
+        <ImageView
+            android:id="@+id/iv_third"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/adventure"
+            android:layout_below="@id/iv_second"
+            android:layout_marginTop="6dp"
+            />
+        <ImageView
+            android:id="@+id/iv_4th"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/shop"
+            android:layout_below="@id/iv_third"
+            android:layout_marginTop="6dp"
+            />
+        <ImageView
+            android:id="@+id/iv_5th"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/stronger"
+            android:layout_below="@id/iv_4th"
+            android:layout_marginTop="6dp"
+            />
+        <ImageView
+            android:id="@+id/iv_6th"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/fusion"
+            android:layout_below="@id/iv_5th"
+            android:layout_marginTop="6dp"
+            />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fra_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/change"
+        android:layout_below="@id/head"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

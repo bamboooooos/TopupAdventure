@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sharp_person">
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:text="物品名称"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_dialog_detail"
+        android:textSize="10dp"
+        android:text="1231244124124"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_dialog_title"
+        />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_dialog_1"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:text="装备"
+        android:textSize="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_dialog_2"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="装备(右)"
+        android:textSize="10dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_dialog_3"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:text="使用"
+        android:textSize="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        />
+
+</RelativeLayout>
