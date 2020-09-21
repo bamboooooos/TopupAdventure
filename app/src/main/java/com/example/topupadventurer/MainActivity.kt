@@ -9,6 +9,8 @@ import android.view.WindowManager
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import com.example.topupadventurer.GameElement.GameEquip
+import com.example.topupadventurer.GameElement.GamePerson
 import com.example.topupadventurer.fragment.*
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -18,8 +20,23 @@ class MainActivity : AppCompatActivity() {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE)
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_main)
+        personalDataInit()
         uiInit()
         controlInit()
+    }
+
+    fun personalDataInit(){
+        //TODO 加载人物信息
+        GamePerson.player= GamePerson()
+        var testData: GameEquip = GameEquip(
+            0,R.drawable.fusion,"装备", GameEquip.EQUIPCLASS_HAND
+        )
+        testData.equipAttack= arrayListOf(4,5)
+        testData.equipDefense= arrayListOf(6,7)
+        testData.equipHealth= arrayListOf(8,9)
+        testData.beLoadAble=false
+        GamePerson.player.leftHandEquip=testData
+
     }
 
     fun uiInit(){

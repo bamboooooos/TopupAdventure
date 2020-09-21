@@ -15,7 +15,7 @@ class ValueToString {
                 /**  value=0  **/
                 GameEquip.EQUIPCLASS_NONE->
                     return "无"
-                GameEquip.EQUIPCLASS_HAND->
+                GameEquip.EQUIPCLASS_HEAD->
                     return "头盔"
                 GameEquip.EQUIPCLASS_HAND->
                     return "护手"
@@ -27,7 +27,13 @@ class ValueToString {
                     return "左手武器"
                 GameEquip.EQUIPCLASS_RIGHT_WEAPON->
                     return "右手武器"
+                /** value=6 **/
 
+                /** value=12 **/
+                GameEquip.EQUIPCLASS_RIGHT_HAND->
+                    return "右手护手"
+                GameEquip.EQUIPCLASS_RIGHT_SHOE->
+                    return "右腿腿铠"
             }
             return "错误"
         }

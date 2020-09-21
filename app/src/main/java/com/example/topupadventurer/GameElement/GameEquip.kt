@@ -14,6 +14,8 @@ class GameEquip :GameItem{
         const val EQUIPCLASS_PANTS:Int=4
         const val EQUIPCLASS_LEFT_WEAPON:Int=5
         const val EQUIPCLASS_RIGHT_WEAPON:Int=6
+        const val EQUIPCLASS_RIGHT_HAND:Int=12
+        const val EQUIPCLASS_RIGHT_SHOE:Int=13
 
         const val ATTRIBUTE_ATTACK:Int=-1
         const val ATTRIBUTE_DEFENSE:Int=-2
@@ -24,6 +26,8 @@ class GameEquip :GameItem{
     var equipAttack:ArrayList<Int> = ArrayList()
     var equipDefense:ArrayList<Int> =ArrayList()
     var equipHealth:ArrayList<Int> =ArrayList()
+
+    var beLoadAble:Boolean=true
 
     constructor(itemId:Int,itemImage:Int,itemName:String,equipClass: Int):super(itemId,itemImage,itemName,-10){  //-10是一个标记位，不显示数量，且真实数量为1
         this.equipClass=equipClass
